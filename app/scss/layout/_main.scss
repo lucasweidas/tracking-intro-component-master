@@ -163,8 +163,9 @@
     letter-spacing: 0.125em;
 
     @include breakpoint(medium) {
-      transition: text-decoration var(--duration) ease;
       text-decoration: underline solid transparent;
+      letter-spacing: 0.063em;
+      transition: text-decoration var(--duration) ease;
 
       &:is(:hover, :focus-visible) {
         text-decoration-color: currentColor;
