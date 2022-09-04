@@ -1,11 +1,12 @@
 @use '../abstracts' as *;
 
 .main {
+  --main-padding-i: 1.5rem;
   overflow-x: hidden;
-  padding: rem(38) rem(24);
+  padding: rem(38) var(--main-padding-i);
 
   @include breakpoint-down(xsmall) {
-    padding-inline: rem(18);
+    --main-padding-i: 1.125rem;
   }
 
   @include breakpoint(medium) {
@@ -77,7 +78,7 @@
     gap: rem(28) rem(42);
 
     @include breakpoint-down(medium) {
-      width: min(calc(100vw - rem(48)), rem(350));
+      width: min(calc(100vw - var(--main-padding-i) * 2), rem(350));
       flex-direction: column;
       position: absolute;
       top: rem(60);
