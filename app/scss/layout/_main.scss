@@ -233,6 +233,7 @@
     width: rem(50);
     height: rem(26);
     display: inline-flex;
+    flex: 0 0 auto;
     justify-content: center;
     align-items: center;
     background-color: var(--blue-9);
