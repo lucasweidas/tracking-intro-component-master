@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+:root {
+  --duration: 200ms;
+}
+
+body {
+  &::before {
+    content: '';
+    width: 50%;
+    height: rem(424);
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-color: var(--blue-2);
+    border-end-start-radius: rem(60);
+  }
+}
